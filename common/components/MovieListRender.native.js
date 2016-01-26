@@ -7,17 +7,17 @@ import React, {
 
 export default function (props, state) {
   return (
-    // if (!this.state.loaded) {
-    //   return this.renderLoadingView();
-    // }
-
+    // // if (!this.state.loaded) {
+    // //   return this.renderLoadingView();
+    // // }
+    //
     // return (
       <ListView
         dataSource={this.state.dataSource}
         renderRow={this.renderMovie}
         style={styles.listView}
         />
-    // )
+    // // )
   );
 }
 

@@ -1,11 +1,12 @@
 'use strict';
 
-import {
+import React, {
   Component,
   Image,
   Text,
   View,
-  ListView
+  ListView,
+  StyleSheet
 } from 'react-native';
 
 var API_KEY = '7waqfqbprs7pajbz28mqf6vz';
@@ -62,5 +63,34 @@ class MovieList extends Component {
   }
 
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#F5FCFF',
+  },
+  title: {
+    fontSize: 20,
+    textAlign: 'center',
+    marginBottom: 8,
+  },
+  year: {
+    textAlign: 'center',
+  },
+  thumbnail: {
+    width: 53,
+    height: 81,
+  },
+  rightContainer: {
+      flex: 1
+  },
+  listView: {
+      paddingTop: 20,
+      backgroundColor: '#F5FCFF'
+  },
+ });
 
 module.exports = MovieList;
